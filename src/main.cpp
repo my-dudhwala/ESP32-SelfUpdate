@@ -16,7 +16,7 @@ unsigned long LedMillis = 0;
 const long Ledinterval = 1000;
 
 String FirmwareVer = {
-  "4.7"
+  "4.8"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/bin_version.txt"
 #define URL_fw_Bin "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/.pio/build/esp32dev/firmware.bin"
@@ -33,7 +33,7 @@ int FirmwareVersionCheck();
 unsigned long previousMillis = 0; // will store last time LED was updated
 unsigned long previousMillis_2 = 0;
 const long interval = 20000;
-const long mini_interval = 1000;
+const long mini_interval = 500;
 
 void repeatedCall() {
   static int num=0;
@@ -52,7 +52,7 @@ unsigned long LedcurrentMillis = millis();
     previousMillis_2 = currentMillis;
     Serial.print("idle loop...");
     Serial.print(num++);
-    Serial.print(" Active Synced version:");
+    Serial.print(" Active Raj sir version:");
     Serial.println(FirmwareVer);
    if(WiFi.status() == WL_CONNECTED) 
    {
