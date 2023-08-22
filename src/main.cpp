@@ -13,7 +13,7 @@ const int ledPin =  2;
 int ledState = LOW;
 unsigned long LedpreviousMillis = 0;
 unsigned long LedMillis = 0;
-const long Ledinterval = 500;
+const long Ledinterval = 1000;
 
 String FirmwareVer = {
   "3.9"
