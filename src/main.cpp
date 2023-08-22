@@ -16,7 +16,7 @@ unsigned long LedMillis = 0;
 const long Ledinterval = 1000;
 
 String FirmwareVer = {
-  "4.6"
+  "4.7"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/bin_version.txt"
 #define URL_fw_Bin "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/.pio/build/esp32dev/firmware.bin"
@@ -52,7 +52,7 @@ unsigned long LedcurrentMillis = millis();
     previousMillis_2 = currentMillis;
     Serial.print("idle loop...");
     Serial.print(num++);
-    Serial.print(" Active version:");
+    Serial.print(" Active Synced version:");
     Serial.println(FirmwareVer);
    if(WiFi.status() == WL_CONNECTED) 
    {
