@@ -5,7 +5,7 @@
 #include <WiFiClientSecure.h>
 #include "cert.h"
 
-const char * ssid = "R&D WiFi";
+const char * ssid = "R&D Web";
 const char * password = "123456789";
 
 #define LED_BUILTIN 2
