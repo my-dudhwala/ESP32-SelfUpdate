@@ -39,7 +39,7 @@ void repeatedCall() {
   }
   if ((currentMillis - previousMillis_2) >= mini_interval) {
     previousMillis_2 = currentMillis;
-    Serial.print("idle loop...");
+    Serial.print("idle loop version 2...");
     Serial.print(num++);
     Serial.print(" Active fw version:");
     Serial.println(FirmwareVer);
