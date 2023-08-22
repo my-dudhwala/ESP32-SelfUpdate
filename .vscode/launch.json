@@ -12,9 +12,9 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "c:/Users/LC-124-145/Documents/PlatformIO/Projects/Test project/.pio/build/esp32dev/firmware.elf",
+            "executable": "c:/Users/LC-124-145/Documents/Mohammed's document/ESP32-SelfUpdate/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/LC-124-145/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "toolchainBinDir": "C:/Users/LC-124-145/.platformio/packages/toolchain-xtensa-esp32@8.4.0+2021r2-patch5/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": {
                 "type": "PlatformIO",
@@ -25,18 +25,18 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "c:/Users/LC-124-145/Documents/PlatformIO/Projects/Test project/.pio/build/esp32dev/firmware.elf",
+            "executable": "c:/Users/LC-124-145/Documents/Mohammed's document/ESP32-SelfUpdate/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/LC-124-145/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "toolchainBinDir": "C:/Users/LC-124-145/.platformio/packages/toolchain-xtensa-esp32@8.4.0+2021r2-patch5/bin",
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "c:/Users/LC-124-145/Documents/PlatformIO/Projects/Test project/.pio/build/esp32dev/firmware.elf",
+            "executable": "c:/Users/LC-124-145/Documents/Mohammed's document/ESP32-SelfUpdate/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/LC-124-145/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "toolchainBinDir": "C:/Users/LC-124-145/.platformio/packages/toolchain-xtensa-esp32@8.4.0+2021r2-patch5/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "loadMode": "manual"
         }

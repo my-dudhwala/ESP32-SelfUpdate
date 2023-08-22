@@ -8,8 +8,13 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "c:/Users/LC-124-145/Documents/PlatformIO/Projects/Test project/include",
-                "c:/Users/LC-124-145/Documents/PlatformIO/Projects/Test project/src",
+                "c:/Users/LC-124-145/Documents/Mohammed's document/ESP32-SelfUpdate/include",
+                "c:/Users/LC-124-145/Documents/Mohammed's document/ESP32-SelfUpdate/src",
+                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src",
+                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
+                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
+                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
+                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -213,8 +218,6 @@
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/FFat/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/FS/src",
-                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
-                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdateServer/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/I2S/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Insights/src",
@@ -229,10 +232,7 @@
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/SimpleBLE/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/USB/src",
-                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
-                "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                 "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                 ""
@@ -240,8 +240,13 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "c:/Users/LC-124-145/Documents/PlatformIO/Projects/Test project/include",
-                    "c:/Users/LC-124-145/Documents/PlatformIO/Projects/Test project/src",
+                    "c:/Users/LC-124-145/Documents/Mohammed's document/ESP32-SelfUpdate/include",
+                    "c:/Users/LC-124-145/Documents/Mohammed's document/ESP32-SelfUpdate/src",
+                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src",
+                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
+                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
+                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
+                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -445,8 +450,6 @@
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/FFat/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/FS/src",
-                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src",
-                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdateServer/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/I2S/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Insights/src",
@@ -461,17 +464,14 @@
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/SimpleBLE/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/USB/src",
-                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
-                    "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                     "C:/Users/LC-124-145/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
                     ""
                 ]
             },
             "defines": [
-                "PLATFORMIO=60109",
+                "PLATFORMIO=60110",
                 "ARDUINO_ESP32_DEV",
                 "HAVE_CONFIG_H",
                 "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\"",
@@ -492,7 +492,7 @@
             ],
             "cStandard": "gnu99",
             "cppStandard": "gnu++11",
-            "compilerPath": "C:/Users/LC-124-145/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc.exe",
+            "compilerPath": "C:/Users/LC-124-145/.platformio/packages/toolchain-xtensa-esp32@8.4.0+2021r2-patch5/bin/xtensa-esp32-elf-gcc.exe",
             "compilerArgs": [
                 "-mlongcalls",
                 ""
