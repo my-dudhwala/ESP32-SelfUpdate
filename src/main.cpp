@@ -11,7 +11,7 @@ const char * password = "123456789";
 #define LED_BUILTIN 2
 
 String FirmwareVer = {
-  "2.2"
+  "3.3"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/bin_version.txt"
 #define URL_fw_Bin "https://raw.github.com/my-dudhwala/ESP32-SelfUpdate/main/.pio/build/esp32dev/firmware.bin"
