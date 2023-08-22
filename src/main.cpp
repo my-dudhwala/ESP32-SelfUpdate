@@ -52,7 +52,7 @@ unsigned long LedcurrentMillis = millis();
     previousMillis_2 = currentMillis;
     Serial.print("idle loop...");
     Serial.print(num++);
-    Serial.print(" Active fw version:");
+    Serial.print(" Active Raj sir version:");
     Serial.println(FirmwareVer);
    if(WiFi.status() == WL_CONNECTED) 
    {
