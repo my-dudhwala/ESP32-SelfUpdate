@@ -11,7 +11,7 @@ const char * password = "123456789";
 #define LED_BUILTIN 2
 
 String FirmwareVer = {
-  "3.3"
+  "3.4"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/bin_version.txt"
 #define URL_fw_Bin "https://raw.github.com/my-dudhwala/ESP32-SelfUpdate/main/.pio/build/esp32dev/firmware.bin"
@@ -39,7 +39,7 @@ void repeatedCall() {
   }
   if ((currentMillis - previousMillis_2) >= mini_interval) {
     previousMillis_2 = currentMillis;
-    Serial.print("idle loop version 2...");
+    Serial.print("idle loop...");
     Serial.print(num++);
     Serial.print(" Active fw version:");
     Serial.println(FirmwareVer);
