@@ -13,10 +13,10 @@ const int ledPin =  2;
 int ledState = LOW;
 unsigned long LedpreviousMillis = 0;
 unsigned long LedMillis = 0;
-const long Ledinterval = 1000;
+const long Ledinterval = 500;
 
 String FirmwareVer = {
-  "3.8"
+  "3.9"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/bin_version.txt"
 #define URL_fw_Bin "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/.pio/build/esp32dev/firmware.bin"
