@@ -11,7 +11,7 @@ const char * password = "123456789";
 #define LED_BUILTIN 2
 
 String FirmwareVer = {
-  "3.5"
+  "3.6"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/bin_version.txt"
 #define URL_fw_Bin "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/.pio/build/esp32dev/firmware.bin"
@@ -27,7 +27,7 @@ int FirmwareVersionCheck();
 
 unsigned long previousMillis = 0; // will store last time LED was updated
 unsigned long previousMillis_2 = 0;
-const long interval = 60000;
+const long interval = 20000;
 const long mini_interval = 1000;
 void repeatedCall() {
   static int num=0;
