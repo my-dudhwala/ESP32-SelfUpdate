@@ -8,10 +8,15 @@
 const char * ssid = "R&D Web";
 const char * password = "123456789";
 
-#define LED_BUILTIN 2
+const int ledPin =  2;
+#define POWER_PIN 16
+int ledState = LOW;
+unsigned long LedpreviousMillis = 0;
+unsigned long LedMillis = 0;
+const long Ledinterval = 1000;
 
 String FirmwareVer = {
-  "3.6"
+  "3.8"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/bin_version.txt"
 #define URL_fw_Bin "https://raw.githubusercontent.com/my-dudhwala/ESP32-SelfUpdate/main/.pio/build/esp32dev/firmware.bin"
@@ -29,9 +34,12 @@ unsigned long previousMillis = 0; // will store last time LED was updated
 unsigned long previousMillis_2 = 0;
 const long interval = 20000;
 const long mini_interval = 1000;
+
 void repeatedCall() {
   static int num=0;
   unsigned long currentMillis = millis();
+unsigned long LedcurrentMillis = millis();
+
   if ((currentMillis - previousMillis) >= interval) {
     // save the last time you blinked the LED
     previousMillis = currentMillis;
@@ -39,7 +47,8 @@ void repeatedCall() {
       firmwareUpdate();
     }
   }
-  if ((currentMillis - previousMillis_2) >= mini_interval) {
+  
+    if ((currentMillis - previousMillis_2) >= mini_interval) {
     previousMillis_2 = currentMillis;
     Serial.print("idle loop...");
     Serial.print(num++);
@@ -53,6 +62,21 @@ void repeatedCall() {
    {
     connect_wifi();
    }
+  }
+
+if (LedcurrentMillis - LedpreviousMillis >= Ledinterval) {
+    // save the last time you blinked the LED
+    LedpreviousMillis = LedcurrentMillis;
+
+    // if the LED is off turn it on and vice-versa:
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+
+    // set the LED with the ledState of the variable:
+    digitalWrite(ledPin, ledState);
   }
 }
 
@@ -85,7 +109,9 @@ void setup() {
   Serial.begin(115200);
   Serial.print("Active firmware version:");
   Serial.println(FirmwareVer);
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+  pinMode(POWER_PIN, OUTPUT);
+  digitalWrite(POWER_PIN, LOW);
   connect_wifi();
 }
 void loop() {
@@ -115,7 +141,7 @@ void connect_wifi() {
 void firmwareUpdate(void) {
   WiFiClientSecure client;
   client.setCACert(rootCACertificate);
-  httpUpdate.setLedPin(LED_BUILTIN, LOW);
+  //httpUpdate.setLedPin(LED_BUILTIN, LOW);
   t_httpUpdate_return ret = httpUpdate.update(client, URL_fw_Bin);
 
   switch (ret) {
